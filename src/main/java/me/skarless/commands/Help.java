@@ -1,5 +1,6 @@
 package me.skarless.commands;
 
+import me.skarless.Main;
 import me.skarless.utils.Command;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
@@ -26,7 +27,7 @@ public class Help extends Command {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setColor(Color.ORANGE);
         embedBuilder.setTitle("`❔ Help`");
-        embedBuilder.setDescription("Thank you for participating in the Trick'cord Treat Discord event! Every 10-20 minutes, a trick-or-treater will appear in a specified channel." +
+        embedBuilder.setDescription("Thank you for participating in the Trick'cord Treat Discord event! Every "+Main.DELAY_MIN+"-"+Main.DELAY_MAX+" minutes, a trick-or-treater will appear in a specified channel." +
                 " From there, you will be tasked to either give them a treat or trick them to your heart's content. The winner of the event will be given a unique role that declares them the winner of this event." +
                 " Have fun!" +
                 "\n\n" + "**Commands:**" +
